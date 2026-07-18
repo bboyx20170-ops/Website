@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Template 3 — Boutique ($350 AUD)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#F8F5F2;--ink:#2B2722;--accent:#B25A3A;--muted:#7F6A61;--line:#E5DDD8;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  body{min-height:100vh;background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 24px;}
+  header{padding:32px 0;display:flex;justify-content:space-between;align-items:center;}
+  .brand{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700;}
+  nav{display:flex;gap:20px;}
+  nav a{text-decoration:none;color:var(--ink);font-size:0.95rem;}
+  .btn{display:inline-block;padding:12px 22px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;}
+  .hero{padding:90px 0;}
+  .eyebrow{display:inline-block;text-transform:uppercase;letter-spacing:0.18em;font-size:0.75rem;color:var(--accent);font-weight:700;margin-bottom:18px;}
+  .hero h1{font-size:clamp(2.5rem,6vw,3.8rem);line-height:1.02;max-width:650px;}
+  .hero p{margin-top:20px;max-width:520px;color:var(--muted);font-size:1rem;}
+  .features{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:52px;}
+  .feature{background:#fff;border-radius:22px;padding:28px;box-shadow:0 24px 64px rgba(80,62,53,.08);}
+  .feature h3{margin-bottom:12px;font-size:1.05rem;}
+  .feature p{color:var(--muted);font-size:0.95rem;}
+  .portfolio{margin:82px 0;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;}
+  .portfolio .card{background:#fff;border-radius:26px;padding:30px;box-shadow:0 28px 82px rgba(80,62,53,.08);}
+  .portfolio h2{font-size:2rem;line-height:1.08;}
+  .portfolio p{margin-top:16px;color:var(--muted);font-size:1rem;}
+  .contact{padding:72px 0;}
+  .contact-card{background:#fff;border-radius:26px;padding:40px;display:flex;justify-content:space-between;gap:28px;align-items:center;box-shadow:0 22px 58px rgba(80,62,53,.08);}
+  .contact-card div{max-width:520px;}
+  .contact-card p{color:var(--muted);}
+  .contact-card a{margin-top:18px;display:inline-block;background:var(--accent);color:#fff;padding:14px 26px;border-radius:999px;text-decoration:none;font-weight:700;}
+  footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-size:0.9rem;}
+  @media(max-width:900px){.features,.portfolio{grid-template-columns:1fr;}nav{display:none;}.contact-card{flex-direction:column;align-items:flex-start;}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">Boutique Studio</div>
+    <nav>
+      <a href="../gallery.html">Back to gallery</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="#contact">Book a Call</a>
+  </div>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <span class="eyebrow">Premium digital experiences</span>
+    <h1>Growing boutique brands with refined web design.</h1>
+    <p>Our creative team crafts luxurious websites built to attract your most discerning customers.</p>
+  </section>
+  <section id="services" class="features">
+    <div class="feature"><h3>Brand Strategy</h3><p>Position your business with a unique story, consistent style, and clear messaging.</p></div>
+    <div class="feature"><h3>Visual Design</h3><p>Beautiful layouts and polished typography that reflect your premium service.</p></div>
+    <div class="feature"><h3>Conversion Focus</h3><p>Website experiences designed to turn visitors into leads and repeat customers.</p></div>
+  </section>
+  <section id="portfolio" class="portfolio">
+    <div class="card"><h2>Elegant websites for service-based businesses.</h2><p>From wellness studios to craft boutiques, our work is subtle, sophisticated and easy to manage.</p></div>
+    <div class="card"><p>We curate every detail, from colour palettes to layout hierarchy, keeping your brand experience cohesive on desktop and mobile.</p></div>
+  </section>
+  <section id="contact" class="contact">
+    <div class="contact-card">
+      <div>
+        <h2>Lets build a beautiful website together.</h2>
+        <p>Start your project with a friendly consultation and a clear design direction.</p>
+      </div>
+      <a href="mailto:hello@boutiquestudio.com.au?subject=Website%20Project">Contact Us</a>
+    </div>
+  </section>
+</main>
+<footer class="wrap"><p>© 2026 Boutique Studio · Template 3</p></footer>
+</body>
+</html>

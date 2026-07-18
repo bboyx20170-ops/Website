@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Template 4 — Professional ($650 AUD)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#161628;--surface:#212134;--text:#E9E7F9;--muted:#9A97B8;--accent:#7B63FF;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{min-height:100vh;background:linear-gradient(180deg,#17172b 0%,#0c0c1e 100%);color:var(--text);font-family:'Inter',sans-serif;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+  header{padding:32px 0;display:flex;justify-content:space-between;align-items:center;}
+  .brand{font-family:'Fraunces',serif;font-size:1.35rem;font-weight:700;letter-spacing:-0.02em;}
+  nav{display:flex;gap:24px;}
+  nav a{color:var(--muted);text-decoration:none;font-size:0.92rem;}
+  nav a:hover{color:var(--text);}
+  .hero{padding:80px 0 60px;display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center;}
+  .hero h1{font-size:clamp(2.6rem,5vw,4.2rem);line-height:1.02;max-width:620px;}
+  .hero p{margin-top:24px;max-width:520px;color:var(--muted);font-size:1rem;}
+  .hero .btn{display:inline-flex;align-items:center;gap:12px;padding:15px 26px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;}
+  .hero .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px;}
+  .stat{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:24px;}
+  .stat strong{display:block;font-size:1.45rem;margin-bottom:10px;}
+  .service-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:60px 0 40px;}
+  .card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:28px;}
+  .card h3{margin-bottom:12px;font-size:1.1rem;}
+  .card p{color:var(--muted);font-size:0.95rem;}
+  .contact{padding:68px 0;}
+  .contact-wrap{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);padding:40px;border-radius:28px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;}
+  .contact-wrap h2{font-size:2rem;margin-bottom:16px;}
+  .contact-wrap p{color:var(--muted);font-size:1rem;line-height:1.8;}
+  .contact-wrap a{display:inline-block;margin-top:22px;padding:14px 24px;background:var(--accent);color:#fff;border-radius:999px;text-decoration:none;font-weight:700;}
+  footer{padding:28px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.07);font-size:0.92rem;}
+  @media(max-width:940px){.hero{grid-template-columns:1fr;}nav{display:none;}.service-cards{grid-template-columns:1fr;}.contact-wrap{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">Professional Edge</div>
+    <nav>
+      <a href="../gallery.html">Back to gallery</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="#contact">Start Project</a>
+  </div>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <h1>Professional websites for teams that want a premium presentation.</h1>
+      <p>We design and build polished digital experiences with structured content, modern interactions, and flawless responsiveness.</p>
+      <a class="btn" href="#contact">Get in Touch</a>
+    </div>
+    <div class="hero-card" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:30px;padding:40px;">
+      <div class="stats">
+        <div class="stat"><strong>9.8/10</strong> Customer satisfaction</div>
+        <div class="stat"><strong>4</strong> weeks average delivery</div>
+        <div class="stat"><strong>120+</strong> businesses served</div>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="service-cards">
+    <div class="card"><h3>UX Consulting</h3><p>Expert guidance on websites that convert leads and reflect your brand.</p></div>
+    <div class="card"><h3>Responsive Design</h3><p>Smooth mobile-first layouts that operate beautifully on every device.</p></div>
+    <div class="card"><h3>Launch Support</h3><p>From deployment to training, we help you launch with confidence.</p></div>
+  </section>
+  <section id="contact" class="contact">
+    <div class="contact-wrap">
+      <div>
+        <h2>Want a website that feels sharp and professional?</h2>
+        <p>Reach out for a tailored proposal, project timeline, and custom growth-focused strategy.</p>
+      </div>
+      <div>
+        <p>hello@professionaledge.com.au</p>
+        <p>+61 3 5555 0241</p>
+        <a href="mailto:hello@professionaledge.com.au?subject=Website%20Project">Email Our Team</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="wrap"><p>© 2026 Professional Edge · Template 4</p></footer>
+</body>
+</html>
