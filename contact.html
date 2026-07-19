@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Local Site Studio</title>
+    <title>Contact | Apex Web Studio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page-shell">
       <header class="site-header">
         <div class="container nav-inner">
-          <a class="brand" href="index.html">Local Site Studio</a>
+          <a class="brand" href="index.html">Apex Web Studio</a>
           <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>
           </button>
@@ -37,11 +37,20 @@
             <div class="contact-copy glow-panel">
               <h3>Prefer to talk it through?</h3>
               <p>Call or email us anytime and we’ll help you choose the best website path for your business.</p>
-              <p><strong>Phone:</strong> <a href="tel:+61355550134">(03) 5555 0134</a></p>
-              <p><strong>Email:</strong> <a href="mailto:hello@example.com.au">hello@example.com.au</a></p>
-              <p class="small-note">We respond within one business day.</p>
+              <p><strong>Phone:</strong> <a href="tel:+61439763432">0439763432</a></p>
+              <p><strong>Email:</strong> <a href="mailto:Apex.1.Website.Studio@gmail.com">Apex.1.Website.Studio@gmail.com</a></p>
+              <p class="small-note">We respond within two business days.</p>
             </div>
-            <form id="contact-form" class="contact-form glow-panel">
+
+            <!-- ACTIVATED FORMSUBMIT HERE -->
+            <form id="contact-form" class="contact-form glow-panel" action="https://formsubmit.co" method="POST">
+              
+              <!-- Hidden Honeypot Spam Protection -->
+              <input type="text" name="_honey" style="display:none">
+              
+              <!-- Disable Captcha Redirect -->
+              <input type="hidden" name="_captcha" value="false">
+
               <div class="form-grid">
                 <div class="form-field">
                   <label for="businessName">Business name</label>
@@ -101,7 +110,7 @@
               <div class="form-actions">
                 <button class="button button-primary" type="submit">Send request</button>
               </div>
-              <div id="form-status" class="form-status">We'll open your email client with this request.</div>
+              <div id="form-status" class="form-status">Your form data will securely route via FormSubmit.</div>
             </form>
           </div>
         </section>
@@ -109,8 +118,8 @@
 
       <footer>
         <div class="container">
-          <p>&copy; 2026 Local Site Studio.</p>
-          <a href="mailto:hello@example.com.au">hello@example.com.au</a>
+          <p>&copy; 2026 Apex Web Studio.</p>
+          <a href="mailto:Apex.1.Website.Studio@gmail.com">Apex.1.Website.Studio@gmail.com</a>
         </div>
       </footer>
     </div>
