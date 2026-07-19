@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,324 +8,329 @@
 </head>
 
 <body>
-<div class="page-shell">
+  <div class="page-shell">
 
-<header class="site-header">
-  <div class="container nav-inner">
+    <header class="site-header">
+      <div class="container nav-inner">
 
-    <a class="brand" href="index.html">
-      Apex Web Studio
-    </a>
+        <a class="brand" href="index.html">
+          Apex Web Studio
+        </a>
 
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span>
-    </button>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Templates</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
 
-    <nav class="site-nav" aria-label="Primary navigation">
-      <a href="index.html">Home</a>
-      <a href="gallery.html">Templates</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+      </div>
+    </header>
+
+
+    <main>
+
+      <section class="section fade-up">
+
+        <div class="container section-intro">
+
+          <p class="section-title">
+            Tell us about your project
+          </p>
+
+          <h2>
+            Whether it’s a quick template site or a custom build, start here.
+          </h2>
+
+          <p>
+            Answer a few quick questions and we’ll send you a clear,
+            no-obligation quote within one business day.
+          </p>
+
+        </div>
+
+
+        <div class="grid-two">
+
+
+          <div class="contact-copy glow-panel">
+
+            <h3>
+              Prefer to talk it through?
+            </h3>
+
+            <p>
+              Call or email us anytime and we’ll help you choose the best
+              website path for your business.
+            </p>
+
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:+61439763432">
+                0439763432
+              </a>
+            </p>
+
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:Apex.1.Website.Studio@gmail.com">
+                Apex.1.Website.Studio@gmail.com
+              </a>
+            </p>
+
+            <p class="small-note">
+              We respond within two business days.
+            </p>
+
+          </div>
+
+
+
+          <form
+            class="contact-form glow-panel"
+            action="https://formspree.io/f/maqrovor"
+            method="POST"
+          >
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Apex Web Studio Quote Request"
+            >
+
+
+            <div class="form-grid">
+
+
+              <div class="form-field">
+                <label for="businessName">
+                  Business name
+                </label>
+
+                <input
+                  id="businessName"
+                  name="Business Name"
+                  type="text"
+                  required
+                >
+              </div>
+
+
+
+              <div class="form-field">
+                <label for="contactName">
+                  Contact name
+                </label>
+
+                <input
+                  id="contactName"
+                  name="Contact Name"
+                  type="text"
+                  required
+                >
+              </div>
+
+
+
+              <div class="form-field">
+                <label for="email">
+                  Email
+                </label>
+
+                <input
+                  id="email"
+                  name="Email"
+                  type="email"
+                  required
+                >
+              </div>
+
+
+
+              <div class="form-field">
+                <label for="phone">
+                  Phone
+                </label>
+
+                <input
+                  id="phone"
+                  name="Phone"
+                  type="tel"
+                >
+              </div>
+
+
+
+              <div class="form-field">
+                <label for="website">
+                  Current website (if any)
+                </label>
+
+                <input
+                  id="website"
+                  name="Current Website"
+                  type="url"
+                  placeholder="https://"
+                >
+              </div>
+
+
+
+              <div class="form-field">
+
+                <label for="projectType">
+                  Project type
+                </label>
+
+                <select
+                  id="projectType"
+                  name="Project Type"
+                >
+
+                  <option value="Template Website">
+                    Template Website
+                  </option>
+
+                  <option value="Custom Website">
+                    Custom Website
+                  </option>
+
+                </select>
+
+              </div>
+
+
+
+              <div class="form-field"
+                   style="grid-column:1 / -1;">
+
+                <label for="designCategory">
+                  Design style
+                </label>
+
+                <select
+                  id="designCategory"
+                  name="Design Style"
+                >
+
+                  <option value="Modern Professional">
+                    Modern professional
+                  </option>
+
+                  <option value="Minimal Luxury">
+                    Minimal luxury
+                  </option>
+
+                  <option value="Bold Colour Forward">
+                    Bold colour-forward
+                  </option>
+
+                  <option value="Warm Local Business">
+                    Warm local business
+                  </option>
+
+                </select>
+
+              </div>
+
+
+
+              <div class="form-field">
+
+                <label for="colour">
+                  Preferred colour palette
+                </label>
+
+                <input
+                  id="colour"
+                  name="Colour Preferences"
+                  type="text"
+                  placeholder="E.g. navy + gold"
+                >
+
+              </div>
+
+
+
+              <div class="form-field"
+                   style="grid-column:1 / -1;">
+
+                <label for="requirements">
+                  Additional requirements
+                </label>
+
+                <textarea
+                  id="requirements"
+                  name="Additional Requirements"
+                  placeholder="Bookings, ecommerce, extra pages, animations, integrations..."
+                ></textarea>
+
+              </div>
+
+
+
+              <div class="form-field"
+                   style="grid-column:1 / -1;">
+
+                <label for="message">
+                  Tell us about your business and what you need
+                </label>
+
+                <textarea
+                  id="message"
+                  name="Message"
+                  required
+                ></textarea>
+
+              </div>
+
+
+            </div>
+
+
+
+            <div class="form-actions">
+
+              <button
+                class="button button-primary"
+                type="submit"
+              >
+                Send request
+              </button>
+
+            </div>
+
+
+          </form>
+
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+
+    <footer>
+
+      <div class="container">
+
+        <p>
+          &copy; 2026 Apex Web Studio.
+        </p>
+
+        <a href="mailto:Apex.1.Website.Studio@gmail.com">
+          Apex.1.Website.Studio@gmail.com
+        </a>
+
+      </div>
+
+    </footer>
+
 
   </div>
-</header>
-
-
-<main>
-
-<section class="section fade-up">
-
-<div class="container section-intro">
-
-<p class="section-title">
-Tell us about your project
-</p>
-
-<h2>
-Whether it’s a quick template site or a custom build, start here.
-</h2>
-
-<p>
-Answer a few quick questions and we’ll send you a clear, no-obligation quote within one business day.
-</p>
-
-</div>
-
-
-<div class="grid-two">
-
-
-<div class="contact-copy glow-panel">
-
-<h3>
-Prefer to talk it through?
-</h3>
-
-<p>
-Call or email us anytime and we’ll help you choose the best website path for your business.
-</p>
-
-<p>
-<strong>Phone:</strong>
-<a href="tel:+61439763432">
-0439763432
-</a>
-</p>
-
-<p>
-<strong>Email:</strong>
-<a href="mailto:Apex.1.Website.Studio@gmail.com">
-Apex.1.Website.Studio@gmail.com
-</a>
-</p>
-
-<p class="small-note">
-We respond within two business days.
-</p>
-
-</div>
-
-
-<form 
-class="contact-form glow-panel"
-action="https://formspree.io/f/maqrovor"
-method="POST"
->
-
-<input 
-type="hidden" 
-name="_subject" 
-value="New Apex Web Studio Quote Request"
-/>
-
-<input 
-type="hidden" 
-name="_next" 
-value="https://apexwebstudio.ddns.net/thankyou.html"
-/>
-
-
-<div class="form-grid">
-
-
-<div class="form-field">
-<label for="businessName">
-Business name
-</label>
-
-<input 
-id="businessName"
-name="Business Name"
-type="text"
-required
-/>
-</div>
-
-
-<div class="form-field">
-<label for="contactName">
-Contact name
-</label>
-
-<input 
-id="contactName"
-name="Contact Name"
-type="text"
-required
-/>
-</div>
-
-
-<div class="form-field">
-<label for="email">
-Email
-</label>
-
-<input 
-id="email"
-name="Email"
-type="email"
-required
-/>
-</div>
-
-
-<div class="form-field">
-<label for="phone">
-Phone
-</label>
-
-<input 
-id="phone"
-name="Phone"
-type="tel"
-/>
-</div>
-
-
-<div class="form-field">
-<label for="website">
-Current website (if any)
-</label>
-
-<input 
-id="website"
-name="Current Website"
-type="url"
-placeholder="https://"
-/>
-</div>
-```
-```html id="1zqg3n"
-<div class="form-field">
-
-<label for="projectType">
-Project type
-</label>
-
-<select 
-id="projectType" 
-name="Project Type"
->
-
-<option value="Template Website">
-Template Website
-</option>
-
-<option value="Custom Website">
-Custom Website
-</option>
-
-</select>
-
-</div>
-
-
-<div class="form-field" style="grid-column: 1 / -1;">
-
-<label for="designCategory">
-Design category
-</label>
-
-<select 
-id="designCategory"
-name="Design Category"
->
-
-<option value="Modern Professional">
-Modern professional
-</option>
-
-<option value="Minimal Luxury">
-Minimal luxury
-</option>
-
-<option value="Bold Colour Forward">
-Bold colour-forward
-</option>
-
-<option value="Warm Local Business">
-Warm local business
-</option>
-
-</select>
-
-</div>
-
-
-<div class="form-field">
-
-<label for="colorPreferences">
-Preferred colour palette
-</label>
-
-<input
-id="colorPreferences"
-name="Colour Preferences"
-type="text"
-placeholder="E.g. navy + gold, charcoal + mint"
-/>
-
-</div>
-
-
-<div class="form-field" style="grid-column: 1 / -1;">
-
-<label for="extraRequirements">
-Additional custom requirements
-</label>
-
-<textarea
-id="extraRequirements"
-name="Additional Requirements"
-placeholder="Bookings, ecommerce, extra pages, animations, integrations..."
-></textarea>
-
-</div>
-
-
-<div class="form-field" style="grid-column: 1 / -1;">
-
-<label for="message">
-Tell us about your business and what you need
-</label>
-
-<textarea
-id="message"
-name="Message"
-required
-></textarea>
-
-</div>
-
-
-</div>
-
-
-<div class="form-actions">
-
-<button 
-class="button button-primary" 
-type="submit"
->
-Send request
-</button>
-
-</div>
-
-
-</form>
-
-
-</div>
-
-</section>
-
-</main>
-
-
-<footer>
-
-<div class="container">
-
-<p>
-&copy; 2026 Apex Web Studio.
-</p>
-
-<a href="mailto:Apex.1.Website.Studio@gmail.com">
-Apex.1.Website.Studio@gmail.com
-</a>
-
-</div>
-
-</footer>
-
-
-</div>
 
 </body>
-
 </html>
-```
