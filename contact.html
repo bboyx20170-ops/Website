@@ -43,31 +43,32 @@
             </div>
 
             <form id="contact-form" class="contact-form glow-panel" action="https://formspree.io/f/maqrovor" method="POST">
+              <input type="hidden" name="_subject" value="New Apex Web Studio Quote Request" />
 
   <div class="form-grid">
     <div class="form-field">
       <label for="businessName">Business name</label>
-      <input id="businessName" name="businessName" type="text" required />
+      <input id="businessName" name="businessName" type="text" data-fs-field required />
     </div>
 
     <div class="form-field">
       <label for="contactName">Contact name</label>
-      <input id="contactName" name="contactName" type="text" required />
+      <input id="contactName" name="contactName" type="text" data-fs-field required />
     </div>
 
     <div class="form-field">
       <label for="email">Email</label>
-      <input id="email" name="email" type="email" required />
+      <input id="email" name="email" type="email" data-fs-field required />
     </div>
 
     <div class="form-field">
       <label for="phone">Phone</label>
-      <input id="phone" name="phone" type="tel" required />
+      <input id="phone" name="phone" type="tel" data-fs-field required />
     </div>
 
     <div class="form-field">
       <label for="website">Current website (if any)</label>
-      <input id="website" name="website" type="url" placeholder="https://" />
+      <input id="website" name="website" type="url" data-fs-field placeholder="https://" />
     </div>
 
     <div class="form-field" style="grid-column: 1 / -1;">
@@ -99,24 +100,25 @@
 
         <div class="form-field" style="grid-column: 1 / -1;">
           <label for="extraRequirements">Additional custom requirements</label>
-          <textarea id="extraRequirements" name="extraRequirements" placeholder="Add details like booking, ecommerce, extra pages, animations, or integrations."></textarea>
+          <textarea id="extraRequirements" name="extraRequirements" data-fs-field placeholder="Add details like booking, ecommerce, extra pages, animations, or integrations."></textarea>
         </div>
       </div>
     </div>
 
     <div class="form-field" style="grid-column: 1 / -1;">
       <label for="message">Tell us about your business and what you need</label>
-      <textarea id="message" name="message" required></textarea>
+      <textarea id="message" name="message" data-fs-field required></textarea>
     </div>
   </div>
 
   <div class="form-actions">
-    <button class="button button-primary" type="submit">Send request</button>
+    <button class="button button-primary" type="submit" data-fs-submit-btn>Send request</button>
   </div>
 
-  <div id="form-status" class="form-status">
+  <div id="form-status" class="form-status" data-fs-error role="status" aria-live="polite">
     Complete the form and click "Send request".
   </div>
+  <div data-fs-success class="form-status" style="display:none;"></div>
 </form>
             
           </div>
@@ -130,6 +132,11 @@
         </div>
       </footer>
     </div>
+    <script>
+      window.formspree = window.formspree || function () { (window.formspree.q = window.formspree.q || []).push(arguments); };
+      window.formspree('initForm', { formElement: '#contact-form', formId: 'maqrovor' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
     <script src="script.js"></script>
   </body>
 </html>
